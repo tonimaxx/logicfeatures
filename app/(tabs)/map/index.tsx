@@ -17,11 +17,20 @@ const AdjustableCircleMap: React.FC = () => {
   // For demo, we set a static temperature value.
   const temperature = 25; // in °C
 
+  const hideCityLabelsStyle = [
+    {
+      featureType: "administrative",
+      elementType: "labels",
+      stylers: [{ visibility: "off" }],
+    },
+  ];
+
   return (
     <View style={styles.container}>
       <MapView
         ref={mapRef}
         provider={PROVIDER_DEFAULT}
+        customMapStyle={hideCityLabelsStyle}
         style={styles.map}
         initialRegion={initialRegion}
       >
