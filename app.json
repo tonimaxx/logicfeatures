@@ -7,11 +7,20 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.logicbaker.logicfeatures",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBZgWcavU1edWkVNNGz7-WdD4KOxYNcT_w"
+      }
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyARRGqmmkD9yzbqqAdxjKUKCyltJCUO3to"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
